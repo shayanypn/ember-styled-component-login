@@ -1,5 +1,5 @@
 import { module, test } from 'qunit';
-import { visit, currentURL } from '@ember/test-helpers';
+import { click, visit, currentURL } from '@ember/test-helpers';
 import { setupApplicationTest } from 'ember-qunit';
 
 module('Acceptance | styled login', function(hooks) {
@@ -11,9 +11,9 @@ module('Acceptance | styled login', function(hooks) {
     assert.dom('h2').hasText('Sign In');
 
     assert.dom('h1').hasText('AceInvoice');
-    assert.dom('h3').hasText('time tracking and invoicing');
+    assert.dom('h3').hasText('Time Tracking and Invoicing');
 
-    assert.dom('a.a--signup > strong').hasText('Sign up');
+    assert.dom('.a--signup strong').hasText('Sign up');
   });
 
   test('visiting /signin', async function(assert) {
@@ -28,7 +28,7 @@ module('Acceptance | styled login', function(hooks) {
     assert.dom('h2').hasText('Sign Up');
 
     assert.dom('h1').hasText('AceInvoice');
-    assert.dom('h3').hasText('time tracking and invoicing');
+    assert.dom('h3').hasText('Time Tracking and Invoicing');
   });
 
   test('visiting /profile', async function(assert) {
