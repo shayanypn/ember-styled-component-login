@@ -56,5 +56,9 @@
   },
   "ember": {
     "edition": "octane"
+  },
+  "dependencies": {
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "ember-styled-components": "0.0.5"
   }
 }
