@@ -6,7 +6,8 @@ cache:
   - node_modules
 script:
   - npm install
-  - npm run deploy
+  - npm run build
+  - npm run github-pages
 deploy:
   provider: pages
   skip_cleanup: true
