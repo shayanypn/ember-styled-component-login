@@ -1,26 +1,15 @@
----
 language: node_js
 node_js:
-  - "10"
-
-dist: trusty
-
-addons:
-  chrome: stable
-
+  - "stable"
 cache:
   directories:
-    - $HOME/.npm
-
-env:
-  global:
-    # See https://git.io/vdao3 for details.
-    - JOBS=1
-
-branches:
-  only:
-    - master
-
+  - node_modules
 script:
-  - npm test
+  - npm install
   - npm run deploy
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $github_token
+  on:
+    branch: master
