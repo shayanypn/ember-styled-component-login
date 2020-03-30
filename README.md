@@ -1,7 +1,10 @@
-# ember-styled-component-login
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+# Ember V3 styled-component login
+
+Simple login form using Ember v3 and Styled-component with TDD process.
+For live preview [Click Here](https://shayanypn.github.io/ember-styled-component-login/)
+
+![screen record of preview](https://github.com/shayanypn/ember-styled-component-login/blob/master/expected-preview.gif)
 
 ## Prerequisites
 
