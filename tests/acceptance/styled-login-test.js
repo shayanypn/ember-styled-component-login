@@ -20,6 +20,11 @@ module('Acceptance | styled login', function(hooks) {
     await visit('/signin');
     assert.equal(currentURL(), '/signin');
     assert.dom('h2').hasText('Sign In');
+
+    assert.dom('[name="username"]').exists();
+    assert.dom('[name="password"]').exists();
+    assert.dom('button').hasText('Sign In');
+    assert.dom('.a--forget').hasText('Forget Password?');
   });
 
   test('visiting /signup', async function(assert) {
@@ -29,6 +34,8 @@ module('Acceptance | styled login', function(hooks) {
 
     assert.dom('h1').hasText('AceInvoice');
     assert.dom('h3').hasText('Time Tracking and Invoicing');
+    assert.dom('[name="username"]').exists();
+    assert.dom('button').hasText('Get Started');
   });
 
   test('visiting /profile', async function(assert) {
