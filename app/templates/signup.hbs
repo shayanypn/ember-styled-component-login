@@ -2,6 +2,20 @@
 <Styled::BtnBack>
 	<LinkTo @route="signin" class="a--back" />
 </Styled::BtnBack>
-
 <h2>Sign Up</h2>
+<div>
+	<Styled::FormInput
+		name="username"
+		placeholder="Email"
+		type="text"
+	/>
+	<Styled::FormGroup
+		@justifyContent="end"
+	>
+		<Styled::Button>
+			Get Started
+		</Styled::Button>
+	</Styled::FormGroup>
+</div>
+
 {{outlet}}

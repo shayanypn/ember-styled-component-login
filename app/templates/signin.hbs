@@ -1,4 +1,31 @@
 <h2>Sign In</h2>
+<div>
+	<Styled::FormInput
+		name="username"
+		placeholder="Email"
+		type="text"
+	/>
+	<Styled::FormInput
+		name="password"
+		placeholder="Password"
+		type="password"
+	/>
+	<Styled::FormGroup>
+		<Styled::Button
+			id="btn-forget"
+			@inputColor="#aaa"
+			@bgColor="#fff"
+			@borderColor="#fff"
+		>
+			Forget Password?
+		</Styled::Button>>
+		<Styled::Button
+			id="btn-signin"
+		>
+			Sign in
+		</Styled::Button>
+	</Styled::FormGroup>
+</div>
 <Styled::BtnSignin>
 	<LinkTo @route="signup" class="a--signup">
 		Don't have an account? <strong>Sign up</strong>

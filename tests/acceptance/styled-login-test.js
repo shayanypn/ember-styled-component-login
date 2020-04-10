@@ -23,8 +23,8 @@ module('Acceptance | styled login', function(hooks) {
 
     assert.dom('[name="username"]').exists();
     assert.dom('[name="password"]').exists();
-    assert.dom('button').hasText('Sign In');
-    assert.dom('.a--forget').hasText('Forget Password?');
+    assert.dom('#btn-signin').hasText('Sign in');
+    assert.dom('#btn-forget').hasText('Forget Password?');
   });
 
   test('visiting /signup', async function(assert) {
